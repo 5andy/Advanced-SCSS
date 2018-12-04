@@ -1,0 +1,19 @@
+{
+  "name": "trillo-project",
+  "version": "1.0.0",
+  "description": "App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.uncomp.css",
+    "compress:css": "node-sass css/style.uncomp.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass compress:css"
+  },
+  "author": "Jose",
+  "license": "ISC",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "node-sass": "^4.10.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
